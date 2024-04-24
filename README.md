@@ -7,13 +7,12 @@ Code for the project "Shallow Learning for long-term Cyanobacterial Bloom foreca
 Due to copyright reasons the dataset used for training and testing the network can not be open sourced. We encourage the use of your own data to test the proposed model and code. The current code expect a .xlsx file with the following categories:
 
 ```
-**date**: Date information for each sample
-**D**: Depth information
-**T**: Temperature value
-**DO**: Dissolved oxygen
-**PH**: pH value
-**FC_IVF**: phycocianin value
-
+date: date information for each sample
+D: Depth information
+T: Temperature value
+DO: Dissolved Oxygen
+PH: PH value
+FC_IVF: phycocianin value
 ``` 
 
 Feel free to change the code to adapt to your own nomenclature or to add/remove parameters.
@@ -26,7 +25,6 @@ The `models/model.h5` contains the weight of the model used for the results pres
 TRAIN = 0: Loads the selected model defined within "model = load_model('../models/model.h5')"
 
 TRAIN = 1: Trains a new model using the same architecture as proposed in the paper.
-
 ``` 
 
 The already trained model is suggested as a baseline. We recommend training new models when neeeded.
